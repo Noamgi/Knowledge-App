@@ -6,4 +6,8 @@
     <string name="_5_minutes">5 minutes</string>
     <string name="img" />
     <string name="img2" />
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
 </resources>
