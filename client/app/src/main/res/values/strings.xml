@@ -3,5 +3,7 @@
     <string name="i_have_5_minutes">I have 5 minutes</string>
     <string name="your_results">Your Results</string>
     <string name="i_have_a_few_minutes_to_enrich_my_knowledge">I have a few minutes to enrich my knowledge</string>
-    <string name="todo">TODO</string>
+    <string name="_5_minutes">5 minutes</string>
+    <string name="img" />
+    <string name="img2" />
 </resources>

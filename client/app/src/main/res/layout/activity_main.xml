@@ -2,30 +2,29 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/background"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="270dp"
-        android:layout_height="148dp"
+        android:layout_width="340dp"
+        android:layout_height="44dp"
         android:layout_marginTop="132dp"
         android:gravity="center"
         android:lineSpacingExtra="10sp"
         android:text="@string/i_have_a_few_minutes_to_enrich_my_knowledge"
-        android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/font"
-        android:textSize="30sp"
+        android:textColor="#FF66C4"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:typeface="normal"
         app:fontFamily="sans-serif-condensed-light"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <Button
         android:id="@+id/button"
@@ -37,8 +36,8 @@
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="@string/i_have_5_minutes"
-        android:textColor="@color/font"
+        android:text="@string/_5_minutes"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,15 +47,17 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="84dp"
-        android:layout_height="65dp"
-        android:contentDescription="@string/todo"
+        android:layout_width="357dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029"
-        app:srcCompat="@drawable/applogo2" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/yizingwhite2"
+        android:contentDescription="@string/img2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
