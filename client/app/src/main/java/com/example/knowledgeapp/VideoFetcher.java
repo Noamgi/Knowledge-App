@@ -18,7 +18,7 @@ public class VideoFetcher {
 
     private RequestQueue _queue;
     private static final String TAG = "VideoFetcher";
-    private final static String REQUEST_URL =  "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&order=viewCount&q=skateboarding%20dog&type=video&videoDefinition=any&videoDuration=short&key=AIzaSyDboQfe__Il6Ey4FJWa4fOms-PTwbz8x_Y";
+    private final static String REQUEST_URL =  "https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cid%2Cstatistics%2CtopicDetails&chart=mostPopular&maxResults=1&key=AIzaSyDboQfe__Il6Ey4FJWa4fOms-PTwbz8x_Y";
 
     public VideoFetcher(Context context) {
         _queue = Volley.newRequestQueue(context);
