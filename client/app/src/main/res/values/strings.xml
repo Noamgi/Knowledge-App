@@ -11,4 +11,9 @@
     <string name="seek_to">Jump To</string>
     <string name="seek_to_hint">Seconds</string>
     <string name="img3" />
+    <string name="let_s_watch">Let\'s Watch</string>
+    <string name="fashion">Fashion</string>
+    <string name="diy">DIY</string>
+    <string name="art">Art</string>
+    <string name="cooking">cooking</string>
 </resources>
