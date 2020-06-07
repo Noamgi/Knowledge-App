@@ -1,9 +1,6 @@
 <resources>
     <string name="app_name">KnowledgeApp</string>
-    <string name="i_have_5_minutes">I have 5 minutes</string>
     <string name="your_results">Your Results</string>
-    <string name="i_have_a_few_minutes_to_enrich_my_knowledge">I have a few minutes to enrich my knowledge</string>
-    <string name="_5_minutes">5 minutes</string>
     <string name="img" />
     <string name="img2" />
 
@@ -14,6 +11,12 @@
     <string name="let_s_watch">Let\'s Watch</string>
     <string name="fashion">Fashion</string>
     <string name="diy">DIY</string>
-    <string name="art">Art</string>
-    <string name="cooking">cooking</string>
+    <string name="Art">Art</string>
+    <string name="Cooking">Cooking</string>
+    <string name="Psychology">Psychology</string>
+    <string name="Leadership">Leadership</string>
+    <string name="Science">Science</string>
+
+    <string name="set_the_time">set the time</string>
+    <string name="choose_your_things">choose your things</string>
 </resources>

@@ -18,7 +18,7 @@ public class VideoFetcher {
 
     private RequestQueue _queue;
     private static final String TAG = "VideoFetcher";
-    private final static String REQUEST_URL =  "https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cid%2Cstatistics%2CtopicDetails&chart=mostPopular&maxResults=1&key=AIzaSyDboQfe__Il6Ey4FJWa4fOms-PTwbz8x_Y";
+    private final static String REQUEST_URL =  "https://www.googleapis.com/youtube/v3/videos?part=id&key=AIzaSyDboQfe__Il6Ey4FJWa4fOms-PTwbz8x_Y";
 
     public VideoFetcher(Context context) {
         _queue = Volley.newRequestQueue(context);
@@ -48,6 +48,11 @@ public class VideoFetcher {
                     public void onResponse(JSONObject response) {
                         Log.i(TAG, "POST Request sent successfully");
                         Log.i(TAG, response.toString());
+                        try {
+                            Log.i("aa", response.getJSONArray("items").getJSONObject(0).getString("id"));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }, new Response.ErrorListener() {
             @Override
