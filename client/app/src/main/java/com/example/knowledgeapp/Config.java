@@ -5,6 +5,6 @@ public final class Config {
     private Config() {
     }
 
-    public static final String YOUTUBE_API_KEY = "AIzaSyDboQfe__Il6Ey4FJWa4fOms-PTwbz8x_Y";
+    public static final String YOUTUBE_API_KEY = "AIzaSyAUjJAuuv8AS_F9vrG_OmoOK7KzdPUf99M";
 
 }

@@ -25,7 +25,7 @@ public class Results extends YouTubeBaseActivity implements OnInitializedListene
     private YouTubePlayerView youTubeView;
 
     //https://www.youtube.com/watch?v=<VIDEO_ID>
-    public static final String VIDEO_ID = "eIho2S0ZahI";
+    public String VIDEO_ID;
     private YouTubePlayer mPlayer;
     private View mPlayButtonLayout;
     private TextView mPlayTimeTextView;
@@ -34,11 +34,11 @@ public class Results extends YouTubeBaseActivity implements OnInitializedListene
     private SeekBar mSeekBar;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
+        VIDEO_ID = getIntent().getStringExtra("id");
 
         // Initializing YouTube player view
         youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_player_view);
@@ -67,7 +67,7 @@ public class Results extends YouTubeBaseActivity implements OnInitializedListene
 
 
         if (!wasRestored) {
-            player.cueVideo("eIho2S0ZahI"); // Plays https://www.youtube.com/watch?v=eIho2S0ZahI
+            player.cueVideo(VIDEO_ID); // Plays https://www.youtube.com/watch?v=eIho2S0ZahI
         }
 
         player.setPlayerStyle(PlayerStyle.CHROMELESS);
